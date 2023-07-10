@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 9196368594849205589}
   - component: {fileID: 9196368594849205610}
   - component: {fileID: 3832362913945645195}
-  - component: {fileID: 3832362913945645194}
+  - component: {fileID: -1099504263444843031}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -52,6 +52,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Speed: 7
+  PV: {fileID: -1099504263444843031}
 --- !u!212 &9196368594849205615
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -197,7 +198,7 @@ MonoBehaviour:
   m_SynchronizeRotation: 1
   m_SynchronizeScale: 0
   m_UseLocal: 1
---- !u!114 &3832362913945645194
+--- !u!114 &-1099504263444843031
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

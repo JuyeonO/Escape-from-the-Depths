@@ -9,13 +9,13 @@ public class NetworkManager : MonoBehaviourPunCallbacks
     // Start is called before the first frame update
     void Start()
     {
-        Screen.SetResolution(540, 960, false);
+        Screen.SetResolution(1920, 1080, false);
         PhotonNetwork.ConnectUsingSettings();
     }
 
     public override void OnConnectedToMaster()
     {
-        PhotonNetwork.JoinOrCreateRoom("Room", new RoomOptions{MaxPlayers = 5}, null);
+        PhotonNetwork.JoinOrCreateRoom("Room", new RoomOptions{MaxPlayers = 6}, null);
     } 
 
     public override void OnJoinedRoom()

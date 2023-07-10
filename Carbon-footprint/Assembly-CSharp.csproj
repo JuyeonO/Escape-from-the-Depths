@@ -44,10 +44,12 @@
      <Compile Include="Assets/Code/MainMenuManager.cs" />
      <Compile Include="Assets/Art/Cainos/Pixel Art Top Down - Basic/Script/LayerTrigger.cs" />
      <Compile Include="Assets/Art/Cainos/Pixel Art Top Down - Basic/Script/CameraFollow.cs" />
+     <Compile Include="Assets/Code/Photon Sever/Manager.cs" />
      <Compile Include="Assets/Art/TopDown 2D RPG BE3/ReadMe/Scripts/ReadmeBE3.cs" />
      <Compile Include="Assets/Photon/PhotonChat/Demos/Common/TextButtonTransition.cs" />
      <Compile Include="Assets/Art/Bolt 2D JellyFarm VE2/ReadMe/Scripts/ReadmeVE2.cs" />
      <Compile Include="Assets/Photon/PhotonChat/Demos/DemoChat/NamePickGui.cs" />
+     <Compile Include="Assets/NetworkManager.cs" />
      <Compile Include="Assets/Art/Cainos/Pixel Art Top Down - Basic/Script/SpriteColorAnimation.cs" />
      <Compile Include="Assets/Code/InfoPanelController.cs" />
      <Compile Include="Assets/Code/Player.cs" />
@@ -63,8 +65,6 @@
      <Compile Include="Assets/Photon/PhotonChat/Demos/DemoChat/FriendItem.cs" />
      <Compile Include="Assets/Photon/PhotonChat/Demos/DemoChat/ChatGui.cs" />
      <Compile Include="Assets/Photon/PhotonChat/Demos/Common/OnStartDelete.cs" />
-     <Compile Include="Assets/Code/Photon Sever/Manager.cs" />
-     <Compile Include="Assets/NetworkManager.cs" />
      <None Include="Assets/TextMesh Pro/Shaders/TMPro.cginc" />
      <None Include="Assets/Photon/PhotonLibs/netstandard2.0/Photon3Unity3D.xml" />
      <None Include="Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile Overlay.shader" />

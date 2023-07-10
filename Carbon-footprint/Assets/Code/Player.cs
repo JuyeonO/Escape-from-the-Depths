@@ -1,9 +1,10 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Photon.Pun;
+using Photon.Realtime;
 
-
-public class Player : MonoBehaviour
+public class Player : MonoBehaviourPunCallbacks
 {
     Rigidbody2D rigid;
     Animator anim;
@@ -11,7 +12,7 @@ public class Player : MonoBehaviour
     float h;
     float v;
     bool isHorizonMove;
-
+    public PhotonView PV;
 
     void Awake()
     {
@@ -52,7 +53,11 @@ public class Player : MonoBehaviour
 
     void FixedUpdate()
     {
-        Vector2 moveVec = isHorizonMove ? new Vector2(h, 0) : new Vector2(0, v);
-        rigid.velocity = moveVec * Speed;
+        if (PV.IsMine)
+        {
+            Vector2 moveVec = isHorizonMove ? new Vector2(h, 0) : new Vector2(0, v);
+            rigid.velocity = moveVec * Speed;
+        }
     }
+
 }
