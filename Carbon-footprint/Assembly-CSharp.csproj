@@ -49,7 +49,7 @@
      <Compile Include="Assets/Photon/PhotonChat/Demos/Common/TextButtonTransition.cs" />
      <Compile Include="Assets/Art/Bolt 2D JellyFarm VE2/ReadMe/Scripts/ReadmeVE2.cs" />
      <Compile Include="Assets/Photon/PhotonChat/Demos/DemoChat/NamePickGui.cs" />
-     <Compile Include="Assets/NetworkManager.cs" />
+     <Compile Include="Assets/Code/Photon Sever/NetworkManager.cs" />
      <Compile Include="Assets/Art/Cainos/Pixel Art Top Down - Basic/Script/SpriteColorAnimation.cs" />
      <Compile Include="Assets/Code/InfoPanelController.cs" />
      <Compile Include="Assets/Code/Player.cs" />

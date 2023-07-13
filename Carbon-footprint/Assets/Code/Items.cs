@@ -5,12 +5,12 @@ using UnityEngine.UI;
 
 public class Items : MonoBehaviour
 {
-    public Image key1;
-    public Image key2;
-    public Image key;
-    public Image wood;
-    public Image blade;
-    public Image knife;
+[SerializeField] private Image key1;
+[SerializeField] private Image key2;
+[SerializeField] private Image key;
+[SerializeField] private Image wood;
+[SerializeField] private Image blade;
+[SerializeField] private Image knife;
     
     private void OnTriggerStay2D(Collider2D other)
     {

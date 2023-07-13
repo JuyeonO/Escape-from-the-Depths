@@ -38,17 +38,20 @@ public class Player : MonoBehaviourPunCallbacks
             isHorizonMove = h !=0;
 
         //isChange의 값은 키가 바뀌었을때를 의미
-        if(anim.GetInteger("hAxisRaw") != h){
-            anim.SetBool("isChange",true);
-            anim.SetInteger("hAxisRaw", (int)h);
+        if(PV.IsMine){
+            if(anim.GetInteger("hAxisRaw") != h){
+                anim.SetBool("isChange",true);
+                anim.SetInteger("hAxisRaw", (int)h);
+            }
+            else if(anim.GetInteger("vAxisRaw") != v){
+                anim.SetBool("isChange",true);
+                anim.SetInteger("vAxisRaw", (int)v);
+            }
+            else{
+                anim.SetBool("isChange",false );
+            }
         }
-        else if(anim.GetInteger("vAxisRaw") != v){
-            anim.SetBool("isChange",true);
-            anim.SetInteger("vAxisRaw", (int)v);
-        }
-        else{
-            anim.SetBool("isChange",false );
-        }
+        
     }
 
     void FixedUpdate()
